@@ -4,7 +4,7 @@
 
 ### Given the following data structure:
 
-stops = [ "Croy", "Cumbernauld", "Falkirk High", "Linlithgow", "Livingston", "Haymarket" ]
+#stops = [ "Croy", "Cumbernauld", "Falkirk High", "Linlithgow", "Livingston", "Haymarket" ]
 
 ### Complete these tasks:
 #
@@ -28,9 +28,9 @@ stops = [ "Croy", "Cumbernauld", "Falkirk High", "Linlithgow", "Livingston", "Ha
 # # 9. Reverse the positions of the stops in the array
 # p stops.reverse
 # # 10. Print out all the stops using a for loop
-for station in stops
-    p station
-end
+# for station in stops
+#     p station
+# end
 
 ## Exercise B
 
@@ -95,6 +95,12 @@ users = {
 ### Complete these tasks:
 
 # 1. Get Jonathan's Twitter handle (i.e. the string `"jonnyt"`)
+# to call a value from the key value pairs within a hash,
+#you need to use the below syntax but make sure you adjust the
+#colon position of the key value
+p  users["Jonathan"][:twitter]
+
+
 # 2. Get Erik's hometown
 # 3. Get the array of Erik's lottery numbers
 # 4. Get the type of Avril's pet Monty
