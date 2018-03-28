@@ -29,14 +29,8 @@ stops = [ "Croy", "Cumbernauld", "Falkirk High", "Linlithgow", "Livingston", "Ha
 # p stops.reverse
 # # 10. Print out all the stops using a for loop
 for station in stops
-  stations_with_a = []
-    if station.include?("a")
-      stations_with_a.push(station)
-    end
-  p stations_with_a
+    p station
 end
-
-
 
 ## Exercise B
 
