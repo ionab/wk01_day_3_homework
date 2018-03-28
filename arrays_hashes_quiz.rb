@@ -105,25 +105,22 @@ users = {
 # # 5. Get the smallest of Erik's lottery numbers
 # p users["Erik"][:lottery_numbers].sort.first
 # 6. Return an array of Avril's lottery numbers that are even
-lottery_numbers = users["Avril"][:lottery_numbers]
-
-result = []
-
-for number in lottery_numbers
-  if number % 2 == 0
-    result << number
-  end
-end
-
-p result
-#   for chicken in chickens_array
-#     if chicken[:name] == name
-#       return chicken
-#     end
+# lottery_numbers = users["Avril"][:lottery_numbers]
+#
+# result = []
+#
+# for number in lottery_numbers
+#   if number % 2 == 0
+#     result << number
 #   end
-#   return nil #if chicken name isn't in the array then return nil
 # end
-# 7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
+#
+# p result
+
+# 7. Erik is one lottery number short! Add the number `7`
+#to be included in his lottery numbers
+p users["Erik"][:lottery_numbers].push(7)
+
 # 8. Change Erik's hometown to Edinburgh
 # 9. Add a pet dog to Erik called "Fluffy"
 # 10. Add another person to the users hash
