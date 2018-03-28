@@ -127,11 +127,12 @@ users = {
 
 
 # 9. Add a pet dog to Erik called "Fluffy"
-users["Erik"][:pets].push(name: "Fluffy")
-p users["Erik"]
+# users["Erik"][:pets].push(name: "Fluffy")
+# p users["Erik"]
 
 # 10. Add another person to the users hash
-
+users[:Kelsie] = {}
+p users
 
 ## Exercise C
 
