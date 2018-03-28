@@ -127,7 +127,8 @@ p users["Erik"]
 
 
 # 9. Add a pet dog to Erik called "Fluffy"
-users["Erik"][:pets][4][:name] = "Fluffy"
+users["Erik"][:pets][5][:name] = "Fluffy"
+p users["Erik"]
 
 # 10. Add another person to the users hash
 
