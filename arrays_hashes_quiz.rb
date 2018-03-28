@@ -93,19 +93,36 @@ users = {
 }
 
 ### Complete these tasks:
-
-# 1. Get Jonathan's Twitter handle (i.e. the string `"jonnyt"`)
-p  users["Jonathan"][:twitter]
-# 2. Get Erik's hometown
-p users["Erik"][:home_town]
-# 3. Get the array of Erik's lottery numbers
-p users["Erik"][:lottery_numbers]
-# 4. Get the type of Avril's pet Monty
-p users["Avril"][:pets][0][:species]
-# 5. Get the smallest of Erik's lottery numbers
-p users["Erik"][:lottery_numbers].sort.first
+#
+# # 1. Get Jonathan's Twitter handle (i.e. the string `"jonnyt"`)
+# p  users["Jonathan"][:twitter]
+# # 2. Get Erik's hometown
+# p users["Erik"][:home_town]
+# # 3. Get the array of Erik's lottery numbers
+# p users["Erik"][:lottery_numbers]
+# # 4. Get the type of Avril's pet Monty
+# p users["Avril"][:pets][0][:species]
+# # 5. Get the smallest of Erik's lottery numbers
+# p users["Erik"][:lottery_numbers].sort.first
 # 6. Return an array of Avril's lottery numbers that are even
-p users["Avril"][:lottery_numers][]
+lottery_numbers = users["Avril"][:lottery_numbers]
+
+result = []
+
+for number in lottery_numbers
+  if number % 2 == 0
+    result << number
+  end
+end
+
+p result
+#   for chicken in chickens_array
+#     if chicken[:name] == name
+#       return chicken
+#     end
+#   end
+#   return nil #if chicken name isn't in the array then return nil
+# end
 # 7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
 # 8. Change Erik's hometown to Edinburgh
 # 9. Add a pet dog to Erik called "Fluffy"
